@@ -6,3 +6,6 @@ a simulator of birds algorithm
 1. fly towards center
 2. avoid hit others
 3. keep similar speed with others.
+
+# try
+https://yoyzhang.github.io/birds/
