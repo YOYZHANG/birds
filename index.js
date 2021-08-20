@@ -1,6 +1,6 @@
 let birds = [];
 const NUM = 100;
-const DRAW_HISTORY = false;
+const DRAW_HISTORY = true;
 let width = 150;
 let height = 150;
 
@@ -15,7 +15,7 @@ function refreshCanvas() {
 }
 
 function drawBirds(ctx, bird) {
-    const {x, y, dx, dy} = bird;
+    const {x, y, dx, dy, history} = bird;
     ctx.translate(x, y);
     ctx.rotate(Math.atan2(dy, dx));
     ctx.translate(-x, -y);
